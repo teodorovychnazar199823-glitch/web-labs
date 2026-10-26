@@ -1,17 +1,123 @@
 <!DOCTYPE html>
-<html> 
+<html lang="en">
     <head>
-        <title>Лабораторна робота №1</title>
+        <meta charset="UTF-8">
+        <title>HTML Elements</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body> 
-        <p align="center">
-            <img src="logo.jpeg" alt="EPAM logo" width="100">
-        </p>
-        <h1>Моя перша HTML-сторінка</h1> 
-        <h2>Чому я вивчаю програмування?</h2>
-        <p>Я вивчаю веброзробку 
-        тому що люблю програмування, 
-        надіюсь, що у майбутньому 
-        це зможе стати моїм способом заробітку</p>
+    <body>
+        <div id="wrapper">
+            <img src="logo.jpeg" alt="EPAM logo" class="aligncenter" width="100">
+            <h1 id="home"><strong>HTML Elements</strong></h1>
+            <hr>
+            <nav>
+            <a href="#home">Home</a>
+            <a href="#headers">Headers</a>
+            <a href="#table">Table</a>
+            <a href="#list">List</a>
+            <a href="#text-formats">Text formats</a>
+            <a href="#blockquotes">Blockquotes</a>
+        </nav>
+        <hr>
+        <div id="content">
+        <p>Pay attention to h1 tag inside section element. Font-size for h1 is the same as font-size for h2, because we have to use only one h1 on the page, and it is commonly used inside header</p>
+        <h2 id="headers">Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <h5>Header 5</h5>
+        <h6>Header 6</h6>
+        <h2 id="table">Table</h2>
+            <table>
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                <tr>
+                    <td><strong>Strong</strong></td>
+                    <td>CO<sub>2</sub></td>
+                    <td><a href="">Some link</a></td>
+                </tr>
+                <tr>
+                    <td><em>Italic</em></td>
+                    <td><abbr title="">Abbreviation</abbr></td>
+                    <td><del>Delete</del></td>
+                </tr>
+                <tr>
+                    <td><u>Underline</u></td>
+                    <td>5<sup>3</sup>=125</td>
+                    <td><ins>Inserted</ins></td>
+                </tr>
+            </table>
+
+        <h2 id="list">Unordered List</h2>
+        <ul>
+            <li>List item 1</li>
+            <li>List item 2
+            <ul>
+                <li>Some nested list item 1</li>
+            </ul>
+            </li>
+            <li>List item 3</li>
+        </ul>
+        <h2>Ordered List</h2>
+        <ol>
+            <li>List item 1</li>
+            <li>List item 2
+                <ol type="A">
+                    <li>Some nested list item 1</li>
+                </ol>
+            </li>
+            <li>List item 3</li>
+        </ol>
+        <h3>Definition List</h3>
+        <dl>
+            <dt>defines terms 1</dt>
+            <dd>description 1</dd>
+            <dt>definition terms 2</dt>
+            <dd>description 2</dd>
+        </dl>
+        <h2>Details</h2>
+        <details open>
+            <summary>Some details element (open)</summary>
+            <p>Here are more details about the details.</p>
+        </details>
+        <details>
+            <summary>Some details element (close)</summary>
+            <p>Here are more details about the details.</p>
+        </details>
+        <hr>
+        <h2 id="text-formats">Text formats</h2>
+        <article>
+            <p>Article Text</p>
+            <h2>Article title</h2>
+            <p>Article description</p>
+        </article>
+        <h3>Preformatted Text</h3>
+        <pre><code>
+Text
+    in a pre element
+    is displayed in a fixed-width
+font, and it preserves
+both           spaces and
+    line breaks
+        </code></pre>
+        <h3>Code</h3>
+        <pre><code>
+.wrapper {
+display: flex;
+    vertical-align: middle;
+    justify-content: center;
+    }
+        </code></pre>
+        <h2 id="blockquotes">Blockquotes</h2>
+        <p>Let's keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
+        <blockquote>"If you go back a few hundred years, what we take for granted today would seem like magic-being able to talk to people over long distances, to transmit images, flying, accessing vast amounts of data like an oracle. These are all things that would have been considered magic a few hundred years ago."</blockquote>
+        <a href="">Elon Musk</a>
+        </div>
+        <footer>
+            <p>&copy; Copyright Epam Systems</p>
+        </footer>
+        </div>
     </body>
 </html>
