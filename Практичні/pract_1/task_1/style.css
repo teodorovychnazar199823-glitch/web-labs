@@ -1,0 +1,153 @@
+.table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 3px;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+.h {
+    grid-column: 1;
+}
+
+.he {
+    grid-column: 18;
+}
+.li {
+    grid-column: 1;
+}
+.number {
+    font-size: 10px;
+    text-align: left;
+    color: white;
+}
+.symbol {
+    font-size: 23px;
+}
+.name {
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+.gray {
+    background-color: gray;
+}
+.blue {
+    background-color: blue;
+}
+.orange {
+    background-color: orange;
+}
+.red {
+    background-color: red;
+}
+.na {
+    grid-row: 3;
+    grid-column: 1;
+}
+.mg {
+    grid-row: 3;
+    grid-column: 2; 
+}
+.lgreen {
+    background-color: greenyellow;
+}
+.b {
+    grid-row: 2;
+    grid-column: 13;
+}
+.c {
+    grid-row: 2;
+    grid-column: 14;
+}
+.n {
+    grid-row: 2;
+    grid-column: 15;
+}
+.o {
+    grid-row: 2;
+    grid-column: 16;
+}
+.lblue {
+    background-color: rgb(0, 170, 255);
+}
+.f {
+    grid-row: 2;
+    grid-column: 17;  
+}
+.ne {
+    grid-row: 2;
+    grid-column: 18;
+}
+.al {
+    grid-row: 3;
+    grid-column: 13;
+}
+.green {
+    background-color: green;
+}
+.si {
+    grid-row: 3;
+    grid-column: 14;
+}
+.p {
+    grid-row: 3;
+    grid-column: 15;
+}
+.s {
+    grid-row: 3;
+    grid-column: 16;
+}
+.cl {
+    grid-row: 3;
+    grid-column: 17;
+}
+.ar {
+    grid-row: 3;
+    grid-column: 18;
+}
+.gr1 {
+    grid-row: 4;
+}
+.purple {
+    background-color: blueviolet;
+}
+.gr2 {
+    grid-row: 5;
+}
+.gr3 {
+    grid-row: 6;
+}
+.pink {
+    background-color: pink;
+}
+.gr4 {
+    grid-row: 7;
+}
+.oorange {
+    background-color: rgb(255, 98, 0);
+}
+.cyan {
+    background-color: rgb(49, 141, 110);
+}
+
+.table2 {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-column: 3/18;
+    grid-row: 8;
+}
+.table3 {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-column: 3/18;
+    grid-row: 9;
+}
